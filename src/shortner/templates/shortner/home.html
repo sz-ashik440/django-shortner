@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <div style="width:800px; margin:0 auto">
+        <h1>Welcome to Shortner</h1>
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            <label for="url">URL</label>
+            <input type="text" placeholder="url" name="url" id="url"/> <br>
+            <input type="submit" value="Shrink">
+        </form>
+    </div>
+
+</body>
+</html>
